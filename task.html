@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="task.css" />
+  </head>
+  <body>
+    <div class="todo_list_box border">
+      <header class="text_center">
+        <h1>todo list</h1>
+      </header>
+      <section class="form border">
+        <form
+          class="text_center"
+          action="#"
+          onsubmit="data(); reset(); return false; "
+        >
+          <h4>Add task</h4>
+          <input
+            id="add_task"
+            type="text"
+            name="task"
+            placeholder="enter task"
+            maxlength="23"
+            required
+          />
+          <input class="button" type="submit" value="Add task" />
+        </form>
+      </section>
+      <section class="task_list">
+        <div id="incompleted_task">
+          <h2>Incompleted tasks</h2>
+          <hr />
+          <span id="no_of_incomlete">0 tasks left</span>
+        </div>
+
+        <div id="completed_task">
+          <h2>Completed tasks</h2>
+          <hr />
+          <span id="no_of_comlete">0 tasks completed</span>
+          <button onclick="remove()">clear completed</button>
+        </div>
+      </section>
+    </div>
+
+    <script src="task.js"></script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+.todo_list_box {
+  width: 500px;
+  background-color: cadetblue;
+  font-family: cursive;
+  font-size: small;
+}
+.border {
+  border: 2px solid black;
+}
+body {
+  display: flex;
+  /* margin: auto; */
+  align-items: center;
+  margin-top: 100px;
+  justify-content: center;
+  background-color: lightgray;
+}
+.text_center {
+  text-align: center;
+}
+#add_task {
+  margin-top: -10px;
+  margin-bottom: 10px;
+
+  height: 30px;
+}
+.task_list {
+  display: flex;
+  height: 200px;
+}
+#incompleted_task {
+  width: 50%;
+  overflow-y: scroll;
+}
+#completed_task {
+  overflow-y: scroll;
+}
